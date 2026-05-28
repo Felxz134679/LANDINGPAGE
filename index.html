@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avaliação Clínica de Metabolismo | Protocolo Avançado</title>
+<meta name="description" content="Avaliação especializada para protocolos de controle metabólico e redução de peso. Verifique sua elegibilidade.">
+
+<!-- Bootstrap 5 CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '968988946023138');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=968988946023138&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+
+<style>
+:root {
+--primary-color: #2c3e50;
+--accent-color: #27ae60;
+--bg-light: #f8f9fa;
+}
+
+body {
+font-family: 'Segoe UI', system-ui, sans-serif;
+color: #333;
+line-height: 1.6;
+}
+
+.hero-section {
+background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+padding: 80px 0;
+text-align: center;
+}
+
+.hero-title {
+font-weight: 700;
+color: var(--primary-color);
+margin-bottom: 20px;
+font-size: 2.5rem;
+}
+
+.hero-subtitle {
+font-size: 1.2rem;
+color: #555;
+max-width: 700px;
+margin: 0 auto 40px;
+}
+
+.benefit-card {
+border: none;
+border-radius: 12px;
+padding: 30px;
+background: white;
+box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+height: 100%;
+transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+transform: translateY(-5px);
+}
+
+.benefit-icon {
+font-size: 2rem;
+color: var(--accent-color);
+margin-bottom: 15px;
+}
+
+.testimonial-card {
+background: white;
+border-left: 4px solid var(--accent-color);
+padding: 20px;
+margin-bottom: 20px;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+}
+
+.form-container {
+background: white;
+padding: 40px;
+border-radius: 15px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.btn-cta {
+background-color: var(--accent-color);
+color: white;
+padding: 15px 30px;
+font-weight: 600;
+border-radius: 8px;
+border: none;
+width: 100%;
+font-size: 1.1rem;
+transition: background 0.3s;
+}
+
+.btn-cta:hover {
+background-color: #219150;
+}
+
+.disclaimer {
+font-size: 0.75rem;
+color: #999;
+margin-top: 40px;
+border-top: 1px solid #eee;
+padding-top: 20px;
+}
+
+/* Hide elements initially for JS validation */
+.hidden { display: none; }
+</style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero-section">
+<div class="container">
+<h1 class="hero-title">Protocolo Clínico de Redução de Peso</h1>
+<p class="hero-subtitle">
+Descubra se você é elegível para tratamentos modernos de controle metabólico e redução de gordura visceral.
+</p>
+<a href="#avaliacao" class="btn btn-cta" style="max-width: 300px; display: inline-block;">
+Iniciar Avaliação Gratuita
+</a>
+</div>
+</section>
+
+<!-- Benefits Section -->
+<section class="py-5 bg-light">
+<div class="container">
+<div class="row g-4">
+<div class="col-md-4">
+<div class="benefit-card text-center">
+<div class="benefit-icon">🔬</div>
+<h4>Tecnologia Avançada</h4>
+<p class="text-muted">Protocolos de segunda geração para regulação metabólica profunda.</p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="benefit-card text-center">
+<div class="benefit-icon">👨‍⚕️</div>
+<h4>Avaliação</h4>
+<p class="text-muted">Análise completa do seu histórico por especialistas antes de qualquer indicação.</p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="benefit-card text-center">
+<div class="benefit-icon">🛡️</div>
+<h4>Segurança Total</h4>
+<p class="text-muted">Medicamentos regulamentados, dispensados apenas com prescrição válida.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Social Proof Section -->
+<section class="py-5">
+<div class="container">
+<h3 class="text-center mb-5">Histórico de Pacientes</h3>
+<div class="row">
+<div class="col-md-6">
+<div class="testimonial-card">
+"Até o quarto mês eu já sentia mais disposição e menos vontade de comer doces. O acompanhamento fez toda a diferença."
+<div class="mt-2 small text-muted">– Mariana S., 34 anos</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="testimonial-card">
+"Eu não acreditava que fosse possível ver resultado em tão pouco tempo sem efeitos colaterais graves."
+<div class="mt-2 small text-muted">– Carlos E., 42 anos</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Form Section -->
+<section id="avaliacao" class="py-5 bg-light">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="form-container">
+<h3 class="text-center mb-4">Pré-Avaliação</h3>
+<p class="text-center text-muted mb-4">Responda para verificar sua elegibilidade para o protocolo.</p>
+
+<form id="leadForm">
+<div class="mb-3">
+<label for="name" class="form-label">Nome Completo</label>
+<input type="text" class="form-control" id="name" required>
+</div>
+
+<div class="mb-3">
+<label for="whatsapp" class="form-label">WhatsApp (com DDD)</label>
+<input type="tel" class="form-control" id="whatsapp" placeholder="(XX) XXXXX-XXXX" required>
+</div>
+
+<div class="mb-3">
+<label for="challenge" class="form-label">Qual seu maior desafio atual?</label>
+<select class="form-select" id="challenge" required>
+<option value="" selected disabled>Selecione...</option>
+<option value="perda_peso">Dificuldade em perder peso</option>
+<option value="controle_fome">Controle da fome compulsiva</option>
+<option value="metabolismo">Metabolismo lento</option>
+<option value="saude_glicemica">Controle glicêmico</option>
+</select>
+</div>
+
+<div class="mb-3">
+<label for="history" class="form-label">Já tentou outros métodos sem sucesso?</label>
+<select class="form-select" id="history" required>
+<option value="" selected disabled>Selecione...</option>
+<option value="sim">Sim, vários</option>
+<option value="parcial">Parcialmente</option>
+<option value="nao">Não, é minha primeira vez</option>
+</select>
+</div>
+
+<button type="submit" class="btn btn-cta mt-3">
+Solicitar Avaliação no WhatsApp
+</button>
+
+<p class="text-center mt-3 small text-muted">
+<small>🔒 Seus dados estão protegidos. Resposta em até 24h.</small>
+</p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Legal Disclaimer -->
+<footer class="container py-4">
+<div class="disclaimer text-center">
+<p>Este site oferece serviços de orientação nutricional e telemedicina. Medicamentos só são dispensados mediante prescrição médica válida e avaliação de profissionais habilitados. Os resultados podem variar de acordo com o organismo de cada paciente. Não garantimos cura ou resultados específicos.</p>
+<p>&copy; 2026 Clínica de Metabolismo Avançado. Todos os direitos reservados.</p>
+</div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Logic Script -->
+<script>
+document.getElementById('leadForm').addEventListener('submit', function(e) {
+e.preventDefault();
+
+// Capture values
+const name = document.getElementById('name').value;
+const whatsapp = document.getElementById('whatsapp').value.replace(/\D/g, ''); // Remove non-digits
+const challenge = document.getElementById('challenge').options[document.getElementById('challenge').selectedIndex].text;
+const history = document.getElementById('history').options[document.getElementById('history').selectedIndex].text;
+
+// YOUR WHATSAPP NUMBER HERE (International format without +)
+const targetNumber = "45998569709";
+
+// Construct message
+const message = `Olá, gostaria de solicitar minha avaliação clínica.%0A%0A*Dados do Paciente:*%0A- Nome: ${name}%0A- WhatsApp: ${whatsapp}%0A- Desafio: ${challenge}%0A- Histórico: ${history}%0A%0AAguardo instruções para prosseguir.`;
+
+// Redirect
+const url = `https://wa.me/${targetNumber}?text=${message}`;
+window.open(url, '_blank');
+});
+</script>
+</body>
+</html>
