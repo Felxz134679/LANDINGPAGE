@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Avaliação Clínica de Metabolismo felipe| Protocolo Avançado</title>
+<title>Avaliação de Metabolismo | Protocolo Avançado</title>
 <meta name="description" content="Avaliação especializada para protocolos de controle metabólico e redução de peso. Verifique sua elegibilidade.">
 
 <!-- Bootstrap 5 CDN -->
@@ -131,8 +131,7 @@ padding-top: 20px;
 <!-- Hero Section -->
 <section class="hero-section">
 <div class="container">
-<h1 class="hero-title">Site do six seven</h1>
-<h1 class="hero-title">Pedro</h1>
+<h1 class="hero-title">Protocolo de Redução de Peso</h1>
 <p class="hero-subtitle">
 Descubra se você é elegível para tratamentos modernos de controle metabólico e redução de gordura visceral.
 </p>
@@ -208,11 +207,6 @@ Iniciar Avaliação Gratuita
 </div>
 
 <div class="mb-3">
-<label for="whatsapp" class="form-label">WhatsApp (com DDD)</label>
-<input type="tel" class="form-control" id="whatsapp" placeholder="(XX) XXXXX-XXXX" required>
-</div>
-
-<div class="mb-3">
 <label for="challenge" class="form-label">Qual seu maior desafio atual?</label>
 <select class="form-select" id="challenge" required>
 <option value="" selected disabled>Selecione...</option>
@@ -265,7 +259,6 @@ e.preventDefault();
 
 // Capture values
 const name = document.getElementById('name').value;
-const whatsapp = document.getElementById('whatsapp').value.replace(/\D/g, ''); // Remove non-digits
 const challenge = document.getElementById('challenge').options[document.getElementById('challenge').selectedIndex].text;
 const history = document.getElementById('history').options[document.getElementById('history').selectedIndex].text;
 
@@ -273,7 +266,7 @@ const history = document.getElementById('history').options[document.getElementBy
 const targetNumber = "45998569709";
 
 // Construct message
-const message = `Olá, gostaria de solicitar minha avaliação clínica.%0A%0A*Dados do Paciente:*%0A- Nome: ${name}%0A- WhatsApp: ${whatsapp}%0A- Desafio: ${challenge}%0A- Histórico: ${history}%0A%0AAguardo instruções para prosseguir.`;
+const message = `Olá, gostaria de solicitar minha avaliação clínica.%0A%0A*Dados do Paciente:*%0A- Nome: ${name}%0A- Desafio: ${challenge}%0A- Histórico: ${history}%0A%0AAguardo instruções para prosseguir.`;
 
 // Redirect
 const url = `https://wa.me/${targetNumber}?text=${message}`;
