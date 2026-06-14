@@ -1,277 +1,749 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Avaliação de Metabolismo | Protocolo Avançado</title>
-<meta name="description" content="Avaliação especializada para protocolos de controle metabólico e redução de peso. Verifique sua elegibilidade.">
-
-<!-- Bootstrap 5 CDN -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '968988946023138');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=968988946023138&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-
-
-<style>
-:root {
---primary-color: #2c3e50;
---accent-color: #27ae60;
---bg-light: #f8f9fa;
-}
-
-body {
-font-family: 'Segoe UI', system-ui, sans-serif;
-color: #333;
-line-height: 1.6;
-}
-
-.hero-section {
-background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-padding: 80px 0;
-text-align: center;
-}
-
-.hero-title {
-font-weight: 700;
-color: var(--primary-color);
-margin-bottom: 20px;
-font-size: 2.5rem;
-}
-
-.hero-subtitle {
-font-size: 1.2rem;
-color: #555;
-max-width: 700px;
-margin: 0 auto 40px;
-}
-
-.benefit-card {
-border: none;
-border-radius: 12px;
-padding: 30px;
-background: white;
-box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-height: 100%;
-transition: transform 0.3s ease;
-}
-
-.benefit-card:hover {
-transform: translateY(-5px);
-}
-
-.benefit-icon {
-font-size: 2rem;
-color: var(--accent-color);
-margin-bottom: 15px;
-}
-
-.testimonial-card {
-background: white;
-border-left: 4px solid var(--accent-color);
-padding: 20px;
-margin-bottom: 20px;
-border-radius: 0 8px 8px 0;
-font-style: italic;
-}
-
-.form-container {
-background: white;
-padding: 40px;
-border-radius: 15px;
-box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-.btn-cta {
-background-color: var(--accent-color);
-color: white;
-padding: 15px 30px;
-font-weight: 600;
-border-radius: 8px;
-border: none;
-width: 100%;
-font-size: 1.1rem;
-transition: background 0.3s;
-}
-
-.btn-cta:hover {
-background-color: #219150;
-}
-
-.disclaimer {
-font-size: 0.75rem;
-color: #999;
-margin-top: 40px;
-border-top: 1px solid #eee;
-padding-top: 20px;
-}
-
-/* Hide elements initially for JS validation */
-.hidden { display: none; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElitePerfumes - Catálogo Exclusivo</title>
+  
+  <!-- Fontes Editoriais Premium -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    /* Estilos e transições customizadas */
+    body {
+      background-color: #FDFCFB;
+      color: #1A1A1A;
+    }
+    .modal-scroll::-webkit-scrollbar {
+      width: 6px;
+    }
+    .modal-scroll::-webkit-scrollbar-track {
+      background: #F2F0ED;
+    }
+    .modal-scroll::-webkit-scrollbar-thumb {
+      background: #B8860B;
+    }
+  </style>
 </head>
-<body>
+<body class="font-sans antialiased min-h-screen pb-24">
 
-<!-- Hero Section -->
-<section class="hero-section">
-<div class="container">
-<h1 class="hero-title">Protocolo de Redução de Peso</h1>
-<p class="hero-subtitle">
-Descubra se você é elegível para tratamentos modernos de controle metabólico e redução de gordura visceral.
-</p>
-<a href="#avaliacao" class="btn btn-cta" style="max-width: 300px; display: inline-block;">
-Iniciar Avaliação Gratuita
-</a>
-</div>
-</section>
+  <!-- Banner Superior -->
+  <div class="bg-[#1A1A1A] text-[#F2F0ED] text-[10px] tracking-[0.3em] py-2.5 px-4 text-center font-medium uppercase border-b border-[#B8860B]/20 flex justify-center items-center gap-4">
+    <span>ENTREGA NACIONAL EXCLUSIVA</span>
+    <span class="text-[#B8860B]">•</span>
+    <span>FRAGRÂNCIAS 100% ORIGINAIS CERTIFICADAS</span>
+  </div>
 
-<!-- Benefits Section -->
-<section class="py-5 bg-light">
-<div class="container">
-<div class="row g-4">
-<div class="col-md-4">
-<div class="benefit-card text-center">
-<div class="benefit-icon">🔬</div>
-<h4>Tecnologia Avançada</h4>
-<p class="text-muted">Protocolos de segunda geração para regulação metabólica profunda.</p>
-</div>
-</div>
-<div class="col-md-4">
-<div class="benefit-card text-center">
-<div class="benefit-icon">👨‍⚕️</div>
-<h4>Avaliação</h4>
-<p class="text-muted">Análise completa do seu histórico por especialistas antes de qualquer indicação.</p>
-</div>
-</div>
-<div class="col-md-4">
-<div class="benefit-card text-center">
-<div class="benefit-icon">🛡️</div>
-<h4>Segurança Total</h4>
-<p class="text-muted">Medicamentos regulamentados, dispensados apenas com prescrição válida.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
+  <!-- Cabeçalho -->
+  <header class="max-w-7xl mx-auto px-6 pt-12 pb-10 md:pt-20 md:pb-16 text-center relative">
+    <div class="inline-flex items-center gap-1.5 bg-[#F2F0ED] px-4 py-1.5 text-[10px] tracking-widest font-semibold text-[#1A1A1A] uppercase border border-stone-200 mb-6">
+      <span>Curadoria Elite Internacional</span>
+    </div>
+    <div class="block">
+      <h1 class="font-serif text-5xl md:text-8xl tracking-tight text-[#1A1A1A] font-bold leading-none">
+        Elite<span class="text-[#B8860B] font-light italic">Perfumes</span>
+      </h1>
+      <div class="h-[1px] w-28 bg-[#B8860B] mx-auto mt-6 mb-4"></div>
+    </div>
+    <p class="max-w-2xl mx-auto text-stone-500 text-xs md:text-sm font-light tracking-[0.08em] uppercase leading-relaxed mt-4">
+      Alta perfumaria importada e a opulência das mais raras joias olfativas árabes.
+    </p>
+  </header>
 
-<!-- Social Proof Section -->
-<section class="py-5">
-<div class="container">
-<h3 class="text-center mb-5">Histórico de Pacientes</h3>
-<div class="row">
-<div class="col-md-6">
-<div class="testimonial-card">
-"Até o quarto mês eu já sentia mais disposição e menos vontade de comer doces. O acompanhamento fez toda a diferença."
-<div class="mt-2 small text-muted">– Mariana S., 34 anos</div>
-</div>
-</div>
-<div class="col-md-6">
-<div class="testimonial-card">
-"Eu não acreditava que fosse possível ver resultado em tão pouco tempo sem efeitos colaterais graves."
-<div class="mt-2 small text-muted">– Carlos E., 42 anos</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+  <!-- Filtros e Busca -->
+  <section class="max-w-6xl mx-auto px-4 mb-16">
+    <div class="bg-white p-6 md:p-10 shadow-[0_10px_45px_rgba(0,0,0,0.02)] border border-stone-200/60">
+      
+      <!-- Input de Busca -->
+      <div class="relative mb-8">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Pesquise por nome, grife ou nota olfativa (ex: Oud, Canela, Sândalo...)"
+          class="w-full bg-[#F2F0ED]/40 border-b border-stone-200 text-[#1A1A1A] text-sm py-4 pl-4 pr-12 focus:outline-none focus:border-[#B8860B] transition-all placeholder:text-stone-400 font-light"
+          oninput="filtrarCatalogo()"
+        />
+      </div>
 
-<!-- Form Section -->
-<section id="avaliacao" class="py-5 bg-light">
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-lg-8">
-<div class="form-container">
-<h3 class="text-center mb-4">Pré-Avaliação</h3>
-<p class="text-center text-muted mb-4">Responda para verificar sua elegibilidade para o protocolo.</p>
+      <div class="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between pt-4 border-t border-stone-100">
+        <!-- Filtro de Gêneros -->
+        <div class="flex-1">
+          <span class="block text-[10px] font-bold uppercase tracking-[0.2em] text-[#B8860B] mb-4">
+            📌 Gênero & Linha
+          </span>
+          <div class="flex flex-wrap gap-2" id="gender-filters">
+            <button onclick="setFilter('gender', 'all')" class="filter-btn-gender bg-[#1A1A1A] text-white font-medium px-5 py-2.5 text-xs uppercase tracking-wider" data-val="all">Ver Todos</button>
+            <button onclick="setFilter('gender', 'feminine')" class="filter-btn-gender bg-[#F2F0ED] text-[#1A1A1A] px-5 py-2.5 text-xs uppercase tracking-wider" data-val="feminine">Feminino</button>
+            <button onclick="setFilter('gender', 'masculine')" class="filter-btn-gender bg-[#F2F0ED] text-[#1A1A1A] px-5 py-2.5 text-xs uppercase tracking-wider" data-val="masculine">Masculino</button>
+            <button onclick="setFilter('gender', 'unisex')" class="filter-btn-gender bg-[#F2F0ED] text-[#1A1A1A] px-5 py-2.5 text-xs uppercase tracking-wider" data-val="unisex">Unissex</button>
+          </div>
+        </div>
 
-<form id="leadForm">
-<div class="mb-3">
-<label for="name" class="form-label">Nome Completo</label>
-<input type="text" class="form-control" id="name" required>
-</div>
+        <!-- Filtro de Tipo -->
+        <div class="flex-1">
+          <span class="block text-[10px] font-bold uppercase tracking-[0.2em] text-[#B8860B] mb-4">
+            🌐 Origem & Tradição
+          </span>
+          <div class="flex flex-wrap gap-2" id="type-filters">
+            <button onclick="setFilter('type', 'all')" class="filter-btn-type bg-[#B8860B] text-white font-medium px-5 py-2.5 text-xs uppercase tracking-wider" data-val="all">Todas as Obras</button>
+            <button onclick="setFilter('type', 'imported')" class="filter-btn-type bg-[#F2F0ED] text-[#1A1A1A] px-5 py-2.5 text-xs uppercase tracking-wider" data-val="imported">Grifes Clássicas</button>
+            <button onclick="setFilter('type', 'arabic')" class="filter-btn-type bg-[#F2F0ED] text-[#1A1A1A] px-5 py-2.5 text-xs uppercase tracking-wider" data-val="arabic">Perfumaria Árabe</button>
+          </div>
+        </div>
+      </div>
 
-<div class="mb-3">
-<label for="challenge" class="form-label">Qual seu maior desafio atual?</label>
-<select class="form-select" id="challenge" required>
-<option value="" selected disabled>Selecione...</option>
-<option value="perda_peso">Dificuldade em perder peso</option>
-<option value="controle_fome">Controle da fome compulsiva</option>
-<option value="metabolismo">Metabolismo lento</option>
-<option value="saude_glicemica">Controle glicêmico</option>
-</select>
-</div>
+      <div class="mt-8 text-center lg:text-left text-[11px] font-medium tracking-wide uppercase text-stone-400">
+        Resultados: <span id="perfumes-count" class="text-[#1A1A1A] font-bold">0</span> perfumes encontrados.
+      </div>
+    </div>
+  </section>
 
-<div class="mb-3">
-<label for="history" class="form-label">Já tentou outros métodos sem sucesso?</label>
-<select class="form-select" id="history" required>
-<option value="" selected disabled>Selecione...</option>
-<option value="sim">Sim, vários</option>
-<option value="parcial">Parcialmente</option>
-<option value="nao">Não, é minha primeira vez</option>
-</select>
-</div>
+  <!-- Grid de Perfumes -->
+  <main class="max-w-6xl mx-auto px-4">
+    <div id="perfumes-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <!-- Injetado dinamicamente via JS -->
+    </div>
+    
+    <div id="no-results" class="hidden text-center py-24 bg-white border border-[#B8860B]/10 px-4">
+      <p class="font-serif text-2xl text-[#1A1A1A] font-semibold">Nenhuma fragrância encontrada</p>
+      <button onclick="resetarFiltros()" class="mt-8 bg-[#1A1A1A] text-white text-xs tracking-widest uppercase font-semibold px-8 py-4 hover:bg-[#B8860B] transition-all">
+        Resetar Filtros
+      </button>
+    </div>
+  </main>
 
-<button type="submit" class="btn btn-cta mt-3">
-Solicitar Avaliação no WhatsApp
-</button>
+  <!-- Modal Detalhes -->
+  <div id="detail-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
+    <div class="bg-white overflow-hidden shadow-2xl max-w-3xl w-full max-h-[92vh] flex flex-col border border-[#B8860B]/20">
+      <!-- Modal Header -->
+      <div class="p-6 pb-4 flex justify-between items-start bg-[#F2F0ED] border-b border-stone-200">
+        <div>
+          <span id="modal-badge" class="text-[10px] tracking-[0.25em] font-bold text-[#B8860B] uppercase">GRIFE INTERNACIONAL</span>
+          <h3 id="modal-name" class="font-serif text-3xl md:text-4xl text-[#1A1A1A] mt-1 font-bold">Nome</h3>
+        </div>
+        <button onclick="fecharModal()" class="text-stone-500 hover:text-black p-2 bg-white border border-stone-300">
+          ✕
+        </button>
+      </div>
 
-<p class="text-center mt-3 small text-muted">
-<small>🔒 Seus dados estão protegidos. Resposta em até 24h.</small>
-</p>
-</form>
-</div>
-</div>
-</div>
-</div>
-</section>
+      <!-- Modal Body -->
+      <div class="overflow-y-auto p-6 md:p-8 space-y-8 modal-scroll">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+          <div class="overflow-hidden aspect-[4/5] bg-[#F2F0ED] border border-stone-200 p-2">
+            <img id="modal-img" src="" alt="" class="w-full h-full object-cover">
+          </div>
+          <div class="space-y-5">
+            <div class="border-b border-stone-100 pb-3">
+              <span class="text-zinc-400 text-[10px] tracking-widest font-bold block uppercase mb-1">Maison / Grife</span>
+              <span id="modal-brand" class="text-xl font-bold font-serif text-[#1A1A1A]">Marca</span>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <span class="text-zinc-400 text-[10px] tracking-widest font-bold block uppercase mb-1">Volumagem</span>
+                <span id="modal-volume" class="text-sm font-semibold text-stone-800">100ml</span>
+              </div>
+              <div>
+                <span class="text-zinc-400 text-[10px] tracking-widest font-bold block uppercase mb-1">Projeção</span>
+                <span id="modal-intensity" class="text-sm font-semibold text-[#B8860B]">Marcante</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<!-- Legal Disclaimer -->
-<footer class="container py-4">
-<div class="disclaimer text-center">
-<p>Este site oferece serviços de orientação nutricional e telemedicina. Medicamentos só são dispensados mediante prescrição médica válida e avaliação de profissionais habilitados. Os resultados podem variar de acordo com o organismo de cada paciente. Não garantimos cura ou resultados específicos.</p>
-<p>&copy; 2026 Clínica de Metabolismo Avançado. Todos os direitos reservados.</p>
-</div>
-</footer>
+        <div class="bg-[#F2F0ED]/30 p-5 border-l-2 border-[#B8860B]">
+          <h4 class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#B8860B] mb-2">Nota Editorial do Especialista</h4>
+          <p id="modal-desc" class="text-stone-600 text-sm font-light leading-relaxed">Descrição</p>
+        </div>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Pirâmide Olfativa -->
+        <div class="border-t border-stone-200 pt-6">
+          <h4 class="text-[10px] font-bold uppercase tracking-[0.25em] text-[#B8860B] mb-4">👑 PIRÂMIDE OLFATIVA D'ELITE</h4>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-[#F2F0ED] p-5 border border-stone-200/50">
+              <span class="text-[#1A1A1A] text-xs font-bold uppercase block mb-2 border-b border-[#B8860B]/20 pb-1.5">Notas de Saída</span>
+              <p id="notes-top" class="text-xs text-stone-700 font-light leading-relaxed"></p>
+            </div>
+            <div class="bg-white p-5 border border-[#B8860B]/20">
+              <span class="text-[#1A1A1A] text-xs font-bold uppercase block mb-2 border-b border-[#B8860B]/20 pb-1.5">Notas de Corpo</span>
+              <p id="notes-heart" class="text-xs text-stone-700 font-light leading-relaxed"></p>
+            </div>
+            <div class="bg-[#1A1A1A] p-5 text-[#F2F0ED]">
+              <span class="text-[#F2F0ED] text-xs font-bold uppercase block mb-2 border-b border-[#B8860B]/40 pb-1.5">Notas de Fundo</span>
+              <p id="notes-base" class="text-xs text-stone-300 font-light leading-relaxed"></p>
+            </div>
+          </div>
+        </div>
 
-<!-- Logic Script -->
-<script>
-document.getElementById('leadForm').addEventListener('submit', function(e) {
-e.preventDefault();
+        <!-- Preço e Garantia -->
+        <div class="bg-white p-6 border border-[#B8860B] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+          <div>
+            <span class="text-[10px] tracking-widest uppercase text-stone-400 block font-semibold">Valor Exclusivo</span>
+            <span id="modal-price" class="text-3xl font-serif font-bold text-[#B8860B]">R$ 0,00</span>
+            <span class="text-[10px] text-emerald-700 font-medium tracking-wide uppercase mt-1.5 block">✓ Original com selo ADIPEC de procedência</span>
+          </div>
+          <div class="text-xs text-stone-500 max-w-sm font-light border-l border-stone-200 pl-4">
+            ✨ <span class="font-semibold text-stone-900">Elite Experience</span>: Atendimento exclusivo e consultoria olfativa gratuita via chat.
+          </div>
+        </div>
+      </div>
 
-// Capture values
-const name = document.getElementById('name').value;
-const challenge = document.getElementById('challenge').options[document.getElementById('challenge').selectedIndex].text;
-const history = document.getElementById('history').options[document.getElementById('history').selectedIndex].text;
+      <!-- Modal Footer -->
+      <div class="bg-[#F2F0ED] p-6 border-t border-stone-200 flex">
+        <a id="modal-whatsapp-btn" href="#" target="_blank" class="flex-1 bg-[#1A1A1A] hover:bg-[#B8860B] text-white text-xs tracking-[0.2em] font-semibold py-4 px-6 flex items-center justify-center gap-2 transition-all uppercase text-center">
+          Garantir via WhatsApp ➔
+        </a>
+      </div>
+    </div>
+  </div>
 
-// YOUR WHATSAPP NUMBER HERE (International format without +)
-const targetNumber = "45998569709";
+  <!-- Painel do Lojista rodapé -->
+  <footer class="bg-[#1A1A1A] text-stone-400 text-xs py-12 border-t border-[#B8860B]/20 mt-20">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div>
+        <h4 class="font-serif text-xl text-[#F2F0ED]">Elite<span class="text-[#B8860B] italic font-light">Perfumes</span></h4>
+        <p class="text-stone-400 text-xs mt-2 leading-relaxed">
+          Suporte e gerenciamento do catálogo portátil. As suas alterações no WhatsApp são gravadas de forma 100% segura no navegador.
+        </p>
+      </div>
+      <div class="bg-black/40 p-5 border border-stone-800 space-y-3">
+        <span class="text-[10px] font-bold uppercase tracking-[0.25em] text-[#B8860B] block">Painel do Lojista - WhatsApp Destino</span>
+        <div class="flex gap-2">
+          <input type="text" id="phone-config" class="bg-stone-900 border border-stone-700 text-white text-xs px-3 py-2 flex-1 outline-none" placeholder="Ex: 5511999999999">
+          <button onclick="salvarTelefone()" class="bg-[#B8860B] text-white text-xs font-semibold px-4 py-2 hover:bg-[#996F05]">Salvar</button>
+        </div>
+        <caption class="text-[9px] text-stone-500 block">Sempre use o formato: DDI (55) + DDD + Número.</caption>
+      </div>
+    </div>
+  </footer>
 
-// Construct message
-const message = `Olá, gostaria de solicitar minha avaliação clínica.%0A%0A*Dados do Paciente:*%0A- Nome: ${name}%0A- Desafio: ${challenge}%0A- Histórico: ${history}%0A%0AAguardo instruções para prosseguir.`;
+  <!-- SCRIPT ENGINE -->
+  <script>
+    // Banco de Dados Local dos Perfumes
+   const PERFUMES = [
+  {
+    id: 'afnan-9pm',
+    name: '9PM',
+    brand: 'Afnan',
+    type: 'arabic',
+    gender: 'masculine',
+    description: 'Um perfume sexy, baladeiro e de grande projeção. Afnan 9PM abre com maçã suculenta fresca e canela picante, caminhando para notas de lavanda cremosa e finalizando em uma viciante base de baunilha doce e fava tonka. Ideal para noites marcantes.',
+    price: 200.00,
+    volume: '100ml',
+    intensity: 'Intensa',
+    notes: {
+      top: ['Maçã Brilhante', 'Canela', 'Lavanda Selvagem', 'Bergamota'],
+      heart: ['Flor de Laranjeira', 'Lírio-do-vale'],
+      base: ['Baunilha', 'Fava Tonka', 'Âmbar Negro', 'Patchouli']
+    },
+    image: 'public/imgs/afnan_9pm.png',
+    bestSeller: true
+  },
+  {
+    id: 'lattafa-fakhar-black',
+    name: 'Fakhar Black',
+    brand: 'Lattafa',
+    type: 'arabic',
+    gender: 'masculine',
+    description: 'Um clássico árabe elegante e altamente sofisticado. Fakhar Black da Lattafa equilibra notas aromáticas frescas de maçã, gengibre vivaz e lavanda com acordes intensos e misteriosos de madeira de âmbar e fava tonka. Apresentado em seu icônico frasco esculpido de design deslumbrante.',
+    price: 210.00,
+    volume: '100ml',
+    intensity: 'Marcante',
+    notes: {
+      top: ['Maçã Verde', 'Gengibre', 'Bergamota'],
+      heart: ['Sálvia', 'Lavanda', 'Zimbro', 'Gerânio'],
+      base: ['Fava Tonka', 'Âmbar', 'Cedro', 'Vetiver']
+    },
+    image: 'public/imgs/lattafa_fakhar_black.png',
+    bestSeller: false
+  },
+  {
+    id: 'club-de-nuit-200ml',
+    name: 'Club de Nuit Intense Man Edp',
+    brand: 'Armaf',
+    type: 'arabic',
+    gender: 'masculine',
+    description: 'A versão Eau de Parfum de 200ml do best-seller absoluto de Armaf. Club de Nuit Intense Man exala uma abertura cítrica frutada e eletrizante, combinando limão siciliano e abacaxi negro, amaciando-se em um luxuoso coração floral que descansa sobre bétula esfumaçada e âmbar.',
+    price: 333.00,
+    volume: '200ml',
+    intensity: 'Intensa',
+    notes: {
+      top: ['Limão Siciliano', 'Abacaxi', 'Groselha Preta', 'Bergamota', 'Maçã'],
+      heart: ['Bétula Esfumaçada', 'Jasmim Noturno', 'Rosa de Grasse'],
+      base: ['Almíscar Nobre', 'Âmbar Cinzento', 'Patchouli', 'Baunilha']
+    },
+    image: 'public/imgs/armaf_cdnim_edp.png',
+    bestSeller: true
+  },
+  {
+    id: 'khamrah-qahwa',
+    name: 'Khamrah Qahwa',
+    brand: 'Lattafa',
+    type: 'arabic',
+    gender: 'unisex',
+    description: 'A joia dourada com notas sedutoras de café. Khamrah Qahwa eleva o já lendário Khamrah adicionando um toque de grãos de café arábica finamente torrados ao lado de tâmaras doces, pralinê, cardamomo aromático e baunilha untuosa. Um deleite oriental imponente.',
+    price: 184.00,
+    volume: '100ml',
+    intensity: 'Intensa',
+    notes: {
+      top: ['Canela', 'Cardamomo', 'Gengibre'],
+      heart: ['Pralinê', 'Tâmaras', 'Café Torrado', 'Flores Brancas'],
+      base: ['Baunilha', 'Fava Tonka', 'Almíscar', 'Benjoim', 'Mirra']
+    },
+    image: 'public/imgs/lattafa_khamrah_qahwa.png',
+    bestSeller: true
+  },
+  {
+    id: 'la-vie-est-belle',
+    name: 'La Vie Est Belle',
+    brand: 'Lancôme',
+    type: 'imported',
+    gender: 'feminine',
+    description: 'Traduzindo o manifesto universal de felicidade e liberdade. La Vie Est Belle combina o brilho frutuoso do cassis e pêra no topo com o requinte majestoso da flor de Íris de Florença, acompanhados de fava tonka quente e o refinamento do pralinê doce de alta costura.',
+    price: 499.00,
+    volume: '100ml',
+    intensity: 'Marcante',
+    notes: {
+      top: ['Cassis (Groselha Preta)', 'Pêra'],
+      heart: ['Íris de Florença', 'Jasmin Sambac', 'Flor de Laranjeira'],
+      base: ['Pralinê', 'Baunilha Orgânica', 'Fava Tonka', 'Patchouli']
+    },
+    image: 'public/imgs/lancome_la_vie_est_belle.png',
+    bestSeller: true
+  },
+  {
+    id: 'sabah-al-ward',
+    name: 'Sabah Al Ward',
+    brand: 'Al Wataniah',
+    type: 'arabic',
+    gender: 'feminine',
+    description: 'Um verdadeiro buquê de elegância e sedução. Sabah Al Ward da famosa casa Al Wataniah é envolvente de ponta a ponta: abre com tangerina suculenta e pimenta rosa, evolui com graciosidade para o cacau e jasmim, deitando-se sobre patchouli terroso e baunilha cremosa.',
+    price: 180.00,
+    volume: '100ml',
+    intensity: 'Marcante',
+    notes: {
+      top: ['Tangerina', 'Pimenta Rosa'],
+      heart: ['Cacau Rico', 'Jasmim Sambac', 'Flor de Laranjeira'],
+      base: ['Baunilha de Madagascar', 'Fava Tonka', 'Patchouli']
+    },
+    image: 'public/imgs/al_wataniah_sabah_al_ward.png',
+    bestSeller: true
+  },
+  {
+    id: 'acqua-di-gio-profondo',
+    name: 'Acqua Di Gio Profondo',
+    brand: 'Giorgio Armani',
+    type: 'imported',
+    gender: 'masculine',
+    description: 'Uma imersão profunda na alma do oceano. Acqua di Giò Profondo desvenda a sensualidade marinha amadeirada com notas ozônicas geladas vibrantes, temperadas com essências aromáticas de alecrim, cipreste e patchouli profundo de mineralidade incomparável.',
+    price: 562.00,
+    volume: '100ml',
+    intensity: 'Moderada',
+    notes: {
+      top: ['Notas Marinhas', 'Aquozone (Acorde Marinho Gelo)', 'Mandarina Verde'],
+      heart: ['Alecrim', 'Lavanda', 'Cipreste', 'Mastique'],
+      base: ['Patchouli', 'Almíscar Mineral', 'Âmbar Mineral']
+    },
+    image: 'public/imgs/armani_aqua_di_gio_profondo.png',
+    bestSeller: false
+  },
+  {
+    id: 'yara-lattafa',
+    name: 'Yara',
+    brand: 'Lattafa',
+    type: 'arabic',
+    gender: 'feminine',
+    description: 'O ícone queridinho internacional de aromas gourmand. Yara é cremoso, aveludado e envolvente, unindo frutas vermelhas suculentas e milkshake gourmet com a suntuosidade de orquídeas tropicais raras e sândalo majestoso.',
+    price: 195.00,
+    volume: '100ml',
+    intensity: 'Moderada',
+    notes: {
+      top: ['Heliotrópio', 'Orquídea', 'Tangerina'],
+      heart: ['Notas Gourmet de Frutas Vermelhas e Creme'],
+      base: ['Baunilha', 'Almíscar', 'Sândalo']
+    },
+    image: 'public/imgs/lattafa_yara.png',
+    bestSeller: true
+  },
+  {
+    id: 'lattafa-fakhar-rose',
+    name: 'Fakhar Rose',
+    brand: 'Lattafa',
+    type: 'arabic',
+    gender: 'feminine',
+    description: 'Um perfume floral-frutado real com nuances exuberantes do Oriente Médio. Fakhar Rose da sofisticada Lattafa apresenta notas encantadoras de pêssego, lírio e rosa búlgara, tecidas sobre jasmim sambac brilhante e um rastro macio de patchouli e fava tonka.',
+    price: 226.00,
+    volume: '100ml',
+    intensity: 'Moderada',
+    notes: {
+      top: ['Laranja de Sangue', 'Pêssego', 'Pêra', 'Maçã'],
+      heart: ['Rosa', 'Lírio-do-vale', 'Ylang-Ylang', 'Jasmin', 'Flor de Laranjeira'],
+      base: ['Madeira de Sândalo', 'Baunilha de Madagascar', 'Patchouli', 'Almíscar Branco']
+    },
+    image: 'public/imgs/lattafa_fakhar_rose.png',
+    bestSeller: false
+  },
+  {
+    id: 'delilah-maison-alhambra',
+    name: 'Delilah Pour Femme',
+    brand: 'Maison Alhambra',
+    type: 'arabic',
+    gender: 'feminine',
+    description: 'Uma explosão floral ultrarrefinada inspirada em alta costura. Delilah Pour Femme combina a frescura radiante de ruibarbo e lichia suculenta com flores de peônia, rosa turca e fava tonka rica. Um aroma sofisticado de alto impacto romântico.',
+    price: 185.00,
+    volume: '100ml',
+    intensity: 'Marcante',
+    notes: {
+      top: ['Ruibarbo', 'Lichia', 'Bergamota'],
+      heart: ['Rosa Turca', 'Peônia Floral', 'Lírio-do-vale'],
+      base: ['Fava Tonka', 'Sândalo', 'Almíscar Branco', 'Cedro']
+    },
+    image: 'public/imgs/maison_alhambra_delilah.png',
+    bestSeller: false
+  },
+  {
+    id: 'orientica-royal-amber',
+    name: 'Royal Amber',
+    brand: 'Orientica',
+    type: 'arabic',
+    gender: 'unisex',
+    description: 'Um perfume de nicho extremamente glamoroso sob frasco puramente dourado reluzente. Royal Amber exala um aroma frutoso suculento nobre de bergamota, melão, notas de abacaxi maduro e o refinamento do âmbar cinzento quente com madeiras preciosas.',
+    price: 362.00,
+    volume: '80ml',
+    intensity: 'Intensa',
+    notes: {
+      top: ['Bergamota', 'Notas Verdes Cítricas'],
+      heart: ['Melão Seco', 'Abacaxi Maduro', 'Gourmand Âmbar'],
+      base: ['Almíscar Nobre', 'Baunilha Cremosa', 'Madeiras do Oriente']
+    },
+    image: 'public/imgs/orientica_royal_amber.png',
+    bestSeller: true
+  },
+  {
+    id: 'dior-sauvage',
+    name: 'Sauvage',
+    brand: 'Dior',
+    type: 'imported',
+    gender: 'masculine',
+    description: 'O Eau de Parfum masculino lendário e inconfundível. Sauvage da prestigiada grife Dior combina a frescura cintilante e mineral da bergamota da Calábria regulada com o mistério envolvente da baunilha de Papua-Nova Guiné e o magnetismo amadeirado do ambroxan.',
+    price: 634.00,
+    volume: '100ml',
+    intensity: 'Marcante',
+    notes: {
+      top: ['Bergamota de Calábria', 'Pimenta de Sichuan'],
+      heart: ['Lavanda', 'Anis Estrelado', 'Noz-moscada', 'Elemi'],
+      base: ['Ambroxan de Cristal', 'Baunilha Absoluta']
+    },
+    image: 'public/imgs/dior_sauvage.png',
+    bestSeller: true
+  },
+  {
+    id: 'dior-jadore',
+    name: "J'adore",
+    brand: 'Dior',
+    type: 'imported',
+    gender: 'feminine',
+    description: 'O grande bouquet floral feminino atemporal da alta costura da Dior. Apresenta notas requintadas de tangerina fresca no topo, unidas a um luxuoso coração de jasmim sambac, rosa damascena e orquídea, refinados por amoras silvestres e baunilha rica no fundo.',
+    price: 619.00,
+    volume: '100ml',
+    intensity: 'Marcante',
+    notes: {
+      top: ['Gengibre', 'Tangerina', 'Melão', 'Pêra'],
+      heart: ['Jasmim', 'Rosa Damascena', 'Lírio-do-vale', 'Orquídea'],
+      base: ['Baunilha', 'Almíscar Selvagem', 'Amora Negra', 'Cedro']
+    },
+    image: 'public/imgs/dior_jadore.png',
+    bestSeller: false
+  },
+  {
+    id: 'jpg-scandal',
+    name: 'Scandal',
+    brand: 'Jean Paul Gaultier',
+    type: 'imported',
+    gender: 'feminine',
+    description: 'Definindo a essência da mulher audaciosa de presença marcante. Scandal quebra as regras com sua famosa nota gourmand de mel fresco dourado e gardênia radiante, abraçados por mel silvestre e patchouli rico e balsâmico de extrema sensualidade.',
+    price: 490.00,
+    volume: '80ml',
+    intensity: 'Intensa',
+    notes: {
+      top: ['Laranja de Sangue', 'Mandarina'],
+      heart: ['Mel Natural', 'Gardênia do Cabo', 'Jasmim Sambac', 'Pêssego'],
+      base: ['Patchouli terroso', 'Cera de Abelha', 'Caramelo Gourmet', 'Alcaçuz']
+    },
+    image: 'public/imgs/jpg_scandal.png',
+    bestSeller: true
+  },
+  {
+    id: 'paco-rabanne-1million',
+    name: '1 Million',
+    brand: 'Paco Rabanne',
+    type: 'imported',
+    gender: 'masculine',
+    description: 'O icônico design de barra de ouro que simboliza sucesso e opulência. Um perfume cativante e ousado que mistura notas brilhantes de mandarina de topo com canela quente, hortelã vibrante e o toque sensual do couro aveludado com âmbar robusto.',
+    price: 385.00,
+    volume: '100ml',
+    intensity: 'Marcante',
+    notes: {
+      top: ['Mandarina Vermelha', 'Hortelã-pimenta', 'Toranja'],
+      heart: ['Canela Especiada', 'Rosa Absoluta', 'Especiarias Finas'],
+      base: ['Couro Âmbar', 'Madeira Branca', 'Patchouli da Indonésia']
+    },
+    image: 'public/imgs/paco_rabanne_1million.png',
+    bestSeller: false
+  },
+  {
+    id: 'bleu-de-chanel',
+    name: 'Bleu de Chanel',
+    brand: 'Chanel',
+    type: 'imported',
+    gender: 'masculine',
+    description: 'Elegância e prestígio indescritíveis. Bleu de Chanel é um dos maiores clássicos contemporâneos mundiais, revelando uma abertura cítrica vibrante e equilibrando sândalo das florestas da Nova Caledônia com cedro seco e acordes incensados envolventes.',
+    price: 839.00,
+    volume: '100ml',
+    intensity: 'Marcante',
+    notes: {
+      top: ['Limão de Amoreira', 'Hortelã', 'Toranja', 'Pimenta Rosa'],
+      heart: ['Noz-moscada', 'Gengibre da Índia', 'Jasmim Branco'],
+      base: ['Incensado', 'Sândalo de Caledônia', 'Patchouli', 'Cedro', 'Vetiver']
+    },
+    image: 'public/imgs/chanel_bleu.png',
+    bestSeller: false
+  },
+  {
+    id: 'lattafa-tharwah-gold',
+    name: 'Tharwah Gold',
+    brand: 'Lattafa',
+    type: 'arabic',
+    gender: 'feminine',
+    description: 'O luxo do ouro engarrafado em essência. Tharwah Gold une flor de lavanda aromática especial de topo com absoluto jasmim suave, deitando sua fragrância em uma rica e inebriante base de baunilha doce dourada fresca e âmbar.',
+    price: 305.00,
+    volume: '100ml',
+    intensity: 'Intensa',
+    notes: {
+      top: ['Lavanda', 'Bergamota Fresca'],
+      heart: ['Jasmim Real', 'Flor de Laranjeira'],
+      base: ['Baunilha', 'Âmbar Amadeirado', 'Vetiver de Java']
+    },
+    image: 'public/imgs/lattafa_tharwah_gold.png',
+    bestSeller: false
+  },
+  {
+    id: 'lattafa-asad',
+    name: 'Asad',
+    brand: 'Lattafa',
+    type: 'arabic',
+    gender: 'masculine',
+    description: 'Inspirado em contornos amadeirados condimentados imponentes. Lattafa Asad desenvolve nuances sofisticadas e ardentes de pimenta preta no topo com sândalo amadeirado precioso de base, patchouli, fava tonka e notas encorpadas de tabaco temperado e âmbar reluzente.',
+    price: 190.00,
+    volume: '100ml',
+    intensity: 'Intensa',
+    notes: {
+      top: ['Pimenta Preta', 'Abacaxi', 'Tabaco Doce'],
+      heart: ['Café Arábica', 'Patchouli', 'Íris'],
+      base: ['Âmbar', 'Baunilha de Madagascar', 'Sândalo Seco', 'Benjoim']
+    },
+    image: 'public/imgs/lattafa_asad.png',
+    bestSeller: true
+  },
+  {
+    id: 'ch-good-girl',
+    name: 'Good Girl',
+    brand: 'Carolina Herrera',
+    type: 'imported',
+    gender: 'feminine',
+    description: 'O icônico design de sapato de salto agulha que conquistou o coração do público fashionista. Good Girl é sensual, ousado e sofisticado de ponta a ponta: jasmim brilhante expressa audácia floral, enquanto o cacau doce e a fava tonka quente exalam mistério cativante.',
+    price: 520.00,
+    volume: '80ml',
+    intensity: 'Marcante',
+    notes: {
+      top: ['Amêndoa Silvestre', 'Café Preto Gourmet', 'Limão Siciliano'],
+      heart: ['Jasmim Sambac', 'Tuberosa Real', 'Rosa Búlgara'],
+      base: ['Cacau', 'Fava Tonka Quente', 'Pralinê', 'Sândalo', 'Baunilha']
+    },
+    image: 'public/imgs/ch_good_girl.png',
+    bestSeller: true
+  }
+];
 
-// Redirect
-const url = `https://wa.me/${targetNumber}?text=${message}`;
-window.open(url, '_blank');
-});
-</script>
+    // Estados dos Filtros
+    let selectedGender = 'all';
+    let selectedType = 'all';
+    let whatsappPhone = localStorage.getItem('elite_perfumes_whatsapp') || '554598569709';
+
+    // Iniciar página
+    document.getElementById('phone-config').value = whatsappPhone;
+    renderCatalogo(PERFUMES);
+
+    // Salvar telefone do lojista
+    function salvarTelefone() {
+      const num = document.getElementById('phone-config').value.replace(/\D/g, '');
+      if (num.length >= 10) {
+        whatsappPhone = num;
+        localStorage.setItem('elite_perfumes_whatsapp', num);
+        alert('WhatsApp configurado com sucesso! 🎉');
+        renderCatalogo(PERFUMES);
+      } else {
+        alert('Por favor, digite um número válido com DDD.');
+      }
+    }
+
+    // Configurar Filtros Ativos
+    function setFilter(type, value) {
+      if (type === 'gender') {
+        selectedGender = value;
+        document.querySelectorAll('.filter-btn-gender').forEach(btn => {
+          btn.className = btn.getAttribute('data-val') === value 
+            ? "filter-btn-gender bg-[#1A1A1A] text-white font-medium px-5 py-2.5 text-xs uppercase tracking-wider"
+            : "filter-btn-gender bg-[#F2F0ED] text-[#1A1A1A] px-5 py-2.5 text-xs uppercase tracking-wider";
+        });
+      } else if (type === 'type') {
+        selectedType = value;
+        document.querySelectorAll('.filter-btn-type').forEach(btn => {
+          btn.className = btn.getAttribute('data-val') === value 
+            ? "filter-btn-type bg-[#B8860B] text-white font-medium px-5 py-2.5 text-xs uppercase tracking-wider"
+            : "filter-btn-type bg-[#F2F0ED] text-[#1A1A1A] px-5 py-2.5 text-xs uppercase tracking-wider";
+        });
+      }
+      filtrarCatalogo();
+    }
+
+    // Função de Filtragem Dinâmica
+    function filtrarCatalogo() {
+      const query = document.getElementById('search-input').value.toLowerCase();
+      
+      const filtrados = PERFUMES.filter(p => {
+        if (selectedGender !== 'all' && p.gender !== selectedGender) return false;
+        if (selectedType !== 'all' && p.type !== selectedType) return false;
+        
+        if (query.trim() !== '') {
+          return p.name.toLowerCase().includes(query) || 
+                 p.brand.toLowerCase().includes(query) || 
+                 p.description.toLowerCase().includes(query) ||
+                 p.notes.top.some(n => n.toLowerCase().includes(query)) ||
+                 p.notes.heart.some(n => n.toLowerCase().includes(query)) ||
+                 p.notes.base.some(n => n.toLowerCase().includes(query));
+        }
+        return true;
+      });
+
+      renderCatalogo(filtrados);
+    }
+
+    function resetarFiltros() {
+      document.getElementById('search-input').value = '';
+      setFilter('gender', 'all');
+      setFilter('type', 'all');
+    }
+
+    // Renderizar Perfumes no Grid
+    function renderCatalogo(lista) {
+      const grid = document.getElementById('perfumes-grid');
+      const noResults = document.getElementById('no-results');
+      document.getElementById('perfumes-count').innerText = lista.length;
+
+      if (lista.length === 0) {
+        grid.innerHTML = '';
+        noResults.classList.remove('hidden');
+        return;
+      }
+      noResults.classList.add('hidden');
+
+      grid.innerHTML = lista.map(p => {
+        const formattedPrice = p.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        return `
+          <div onclick="abrirModal('${p.id}')" class="group bg-white border border-stone-200/60 relative flex flex-col justify-between cursor-pointer hover:border-[#B8860B] hover:shadow-[0_15px_45px_rgba(0,0,0,0.03)] transition-all duration-300">
+            <div>
+              <div class="absolute top-4 left-4 z-10 flex flex-col gap-1.5">
+                ${p.bestSeller ? '<span class="bg-[#B8860B] text-white text-[9px] tracking-[0.2rem] uppercase font-bold py-1 px-3">Mais Vendido</span>' : ''}
+                <span class="text-[9px] tracking-[0.2rem] uppercase font-bold py-1 px-3 bg-[#1A1A1A] text-[#F2F0ED]">
+                  ${p.type === 'arabic' ? 'Árabe' : 'Importado'}
+                </span>
+              </div>
+              <div class="aspect-[4/5] w-full overflow-hidden bg-stone-50 relative border-b border-stone-100">
+                <img src="${p.image}" alt="${p.name}" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+              </div>
+              <div class="p-6 pb-2">
+                <span class="text-[10px] font-bold text-[#B8860B] tracking-[0.25em] uppercase block mb-2">${p.brand}</span>
+                <h3 class="font-serif text-2xl text-[#1A1A1A] mb-3 leading-tight group-hover:text-[#B8860B] transition-colors">${p.name}</h3>
+                <div class="flex items-center gap-2 mt-2">
+                  <span class="text-[10px] uppercase tracking-wider bg-[#F2F0ED] text-[#1A1A1A] px-2.5 py-1 font-semibold">${p.volume}</span>
+                  <span class="text-[10px] uppercase tracking-wider px-2.5 py-1 font-semibold bg-amber-50/50 text-[#B8860B]">${p.gender === 'feminine' ? '🌸 Feminino' : p.gender === 'masculine' ? '⚡ Masculino' : '✨ Unissex'}</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-2 mt-4 border-t border-stone-100">
+              <div class="flex items-baseline justify-between mb-4">
+                <span class="text-xl font-serif font-bold text-[#1A1A1A]">${formattedPrice}</span>
+                <span class="text-[10px] text-stone-400 uppercase tracking-widest font-semibold">Disponível</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <button class="flex-1 bg-white hover:bg-[#F2F0ED] text-[#1A1A1A] text-xs uppercase tracking-widest font-semibold py-3.5 border border-stone-200 transition-all text-center">Ver Detalhes</button>
+                <a href="${obterLinkWpp(p)}" target="_blank" onclick="event.stopPropagation();" class="bg-[#1A1A1A] hover:bg-[#B8860B] text-white p-3.5 transition-colors flex items-center justify-center">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.73-1.45L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.859-4.407 9.862-9.83.001-2.628-1.01-5.1-2.85-6.944-1.839-1.84-4.288-2.853-6.923-2.854-5.437 0-9.859 4.407-9.862 9.83-.001 1.761.464 3.483 1.348 5.011l-.988 3.606 3.738-.978zm11.233-6.52c-.27-.135-1.597-.788-1.846-.878-.25-.09-.431-.136-.612.135-.181.27-.701.879-.858 1.059-.158.18-.315.2-.585.065-.27-.135-1.139-.42-2.17-1.34-1.015-.91-1.699-2.035-1.899-2.375-.2-.338-.021-.52.149-.689.153-.152.34-.396.51-.594.17-.198.226-.33.34-.55.113-.22.056-.413-.028-.55-.084-.135-.701-1.688-.959-2.31-.252-.607-.51-.524-.701-.534-.18-.01-.387-.01-.594-.01-.207 0-.543.078-.826.39-.283.313-1.082 1.058-1.082 2.58 0 1.52 1.106 2.99 1.258 3.2.152.203 2.177 3.325 5.275 4.66.737.318 1.312.507 1.761.65.74.235 1.41.202 1.942.122.593-.088 1.598-.654 1.821-1.285.223-.63.223-1.17.158-1.285-.065-.115-.24-.2-.51-.335z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Gerar Link do WhatsApp com a Mensagem
+    function obterLinkWpp(perfume) {
+      const textMsg = `Olá, ElitePerfumes! Olhei o catálogo e gostei muito deste perfume:
+      
+✨ *${perfume.name}* (${perfume.brand})
+📏 Vol: ${perfume.volume}
+💰 Valor: ${perfume.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
+
+Gostaria de consultar a disponibilidade para entrega. Obrigado!`;
+      return `https://wa.me/${whatsappPhone}?text=${encodeURIComponent(textMsg)}`;
+    }
+
+    // Detalhar Perfume no Modal
+    function abrirModal(id) {
+      const p = PERFUMES.find(item => item.id === id);
+      if (!p) return;
+
+      document.getElementById('modal-name').innerText = p.name;
+      document.getElementById('modal-brand').innerText = p.brand;
+      document.getElementById('modal-volume').innerText = p.volume;
+      document.getElementById('modal-intensity').innerText = p.intensity;
+      document.getElementById('modal-desc').innerText = p.description;
+      document.getElementById('modal-price').innerText = p.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+      document.getElementById('modal-img').src = p.image;
+      document.getElementById('modal-badge').innerText = p.type === 'arabic' ? 'MUSA DA PERFUMARIA ÁRABE' : 'GRIFE INTERNACIONAL AUTÊNTICA';
+      
+      // Pirâmide olfativa
+      document.getElementById('notes-top').innerText = p.notes.top.join(', ');
+      document.getElementById('notes-heart').innerText = p.notes.heart.join(', ');
+      document.getElementById('notes-base').innerText = p.notes.base.join(', ');
+
+      const btnWpp = document.getElementById('modal-whatsapp-btn');
+      btnWpp.href = obterLinkWpp(p);
+
+      document.getElementById('detail-modal').style.display = 'flex';
+    }
+
+    function fecharModal() {
+      document.getElementById('detail-modal').style.display = 'none';
+    }
+  </script>
 </body>
 </html>
